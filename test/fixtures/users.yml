@@ -1,15 +1,17 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# test/fixtures/users.yml
 
 one:
-  username: MyString
-  password_digest: MyString
-  credits: 1
+  email: user_one@example.com
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'password123') %>
+  display_name: User One
+  credits: 100
   level: 1
-  saved_game_state: MyText
+  saved_game_state: "{}"
 
 two:
-  username: MyString
-  password_digest: MyString
-  credits: 1
-  level: 1
-  saved_game_state: MyText
+  email: user_two@example.com
+  encrypted_password: <%= Devise::Encryptor.digest(User, 'password123') %>
+  display_name: User Two
+  credits: 150
+  level: 2
+  saved_game_state: "{}"
