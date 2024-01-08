@@ -4,7 +4,9 @@ Rails.application.routes.draw do
 
 
   # Custom routes for additional user actions
-  resources :users, only: [:index, :show, :update]
+  resources :users, only: [:index, :show, :update] do 
+    patch :update_credits, on: :member
+  end
 
   # Health check route
   get "up" => "rails/health#show", as: :rails_health_check

@@ -23,3 +23,5 @@ class CustomSessionsController < Devise::SessionsController
         { scope: resource_name, recall: "#{controller_path}#new" }
     end
 end
+
+
