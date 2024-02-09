@@ -1,24 +1,44 @@
-# README
+# Rails API Backend for Space Rescue Game
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repository contains the Rails API-only backend for the Space Rescue game, featuring user registration and authentication handled by Devise.
 
-Things you may want to cover:
+## Technologies Used
 
-* Ruby version
+- **Ruby on Rails**: API-only mode for serving backend requests.
+- **Devise**: For user authentication and registration.
+- **SQLite**: Database
 
-* System dependencies
+## Getting Started
 
-* Configuration
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-* Database creation
+### Prerequisites
 
-* Database initialization
+Before you begin, ensure you have the following installed:
+- Ruby 
+- Rails 
+- SQLite
 
-* How to run the test suite
+### Installation
 
-* Services (job queues, cache servers, search engines, etc.)
+Clone the repository:
+```sh
+   git clone https://github.com/mfolsom/space-rescue-api.git
+```
+```sh
+   cd space-rescue-api
+```
+```sh
+   bundle install
+```
+```sh
+rails db:create db:migrate
+```
+```sh
+rails server
+```
 
-* Deployment instructions
+### Link to the Frontend
+For the complete gaming experience, run this with the frontend repository of the [Space Rescue Game: https://github.com/mfolsom/space-rescue](https://github.com/mfolsom/space-rescue)
 
-* ...
+
