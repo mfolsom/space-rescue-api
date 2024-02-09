@@ -25,6 +25,7 @@ Clone the repository:
 ```sh
    git clone https://github.com/mfolsom/space-rescue-api.git
 ```
+Installation:
 ```sh
    cd space-rescue-api
 ```
@@ -32,10 +33,10 @@ Clone the repository:
    bundle install
 ```
 ```sh
-rails db:create db:migrate
+   rails db:create db:migrate
 ```
 ```sh
-rails server
+   rails server
 ```
 
 ### Link to the Frontend
